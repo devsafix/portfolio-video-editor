@@ -6,86 +6,93 @@
 
 
 .roboto {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 
 body {
-    font-family: "Ubuntu", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 /* Scale Animation */
 @keyframes scale-up {
-    0%, 100% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
+
+  0%,
+  100% {
+    transform: scale(1);
   }
-  .animate-scale {
-    animation: scale-up 3s infinite ease-in-out;
+
+  50% {
+    transform: scale(1.1);
   }
-  
-  /* Up-and-Down Animation */
-  @keyframes up-down {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
+}
+
+.animate-scale {
+  animation: scale-up 3s infinite ease-in-out;
+}
+
+/* Up-and-Down Animation */
+@keyframes up-down {
+
+  0%,
+  100% {
+    transform: translateY(0);
   }
-  .animate-up-down {
-    animation: up-down 2s infinite ease-in-out;
+
+  50% {
+    transform: translateY(-10px);
   }
-  
-  
+}
+
+.animate-up-down {
+  animation: up-down 2s infinite ease-in-out;
+}
+
 
 /* font size */
 @layer base {
-    h1 {
-        @apply lg:text-[45px] text-[35px];
-        @apply font-bold;
-    }
+  h1 {
+    @apply lg:text-[45px] text-[35px];
+    @apply font-bold;
+  }
 
-    h2 {
-        @apply lg:text-[40px] text-[30px];
-        @apply font-bold;
-    }
+  h2 {
+    @apply lg:text-[40px] text-[30px];
+    @apply font-bold;
+  }
 
-    h3 {
-        @apply lg:text-[35px] text-[20px];
-        @apply font-bold;
-    }
+  h3 {
+    @apply lg:text-[35px] text-[22px];
+    @apply font-bold;
+  }
 
-    h4 {
-        @apply text-[25px];
-    }
+  h4 {
+    @apply text-[25px];
+  }
 
-    p {
-        @apply md:text-[16px] text-[15px];
-    }
+  p {
+    @apply md:text-[16px] text-[15px];
+  }
 
-    li {
-        @apply text-[18px];
-    }
+  li {
+    @apply text-[18px];
+  }
 
-    h6 {
-        @apply text-[14px];
-    }
+  h6 {
+    @apply text-[14px];
+  }
 
 }
 
 @layer components {
 
-    .container {
-        @apply max-w-screen-xl mx-auto px-3;
-    }
+  .container {
+    @apply max-w-screen-xl mx-auto px-3;
+  }
 
-    .bilbo-text{
-        font-family: "Bilbo Swash Caps", cursive;
-        font-size: 100px;
-        letter-spacing: 5px;
-    }
+  .bilbo-text {
+    font-family: "Bilbo Swash Caps", cursive;
+    font-size: 100px;
+    letter-spacing: 5px;
+  }
 }

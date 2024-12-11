@@ -91,7 +91,7 @@ const Navbar = () => {
                         <line x1="4" x2="20" y1="18" y2="18" />
                     </svg>
                     {dropDownState && (
-                        <ul className="z-10 gap-2 bg-[#393E46] absolute right-0 top-12 flex w-[200px] flex-col rounded-lg text-base">
+                        <ul className="z-10 gap-2 bg-[#393E46] absolute right-0 top-14 flex w-[200px] flex-col rounded-lg text-base">
                             <li className="cursor-pointer px-6 py-2 text-white rounded-t-lg hover:bg-sky-600">
                                 <Link>Home</Link>
                             </li>
