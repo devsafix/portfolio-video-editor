@@ -1,3 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bilbo&family=Homemade+Apple&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+}
+
+.bilbo {
+    font-family: "Bilbo", cursive;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+
+/* font size */
+@layer base {
+    h1 {
+        @apply lg:text-[45px] md:text-[35px] text-[25px];
+        @apply font-bold;
+    }
+
+    h2 {
+        @apply lg:text-[40px] md:text-[30px] text-[20px];
+        @apply font-bold;
+    }
+
+    h3 {
+        @apply lg:text-[35px] text-[30px];
+        @apply font-bold;
+    }
+
+    h4 {
+        @apply text-[25px];
+    }
+
+    p {
+        @apply text-[16px];
+    }
+
+    li {
+        @apply text-[18px];
+    }
+
+    h6 {
+        @apply text-[14px];
+    }
+
+}
+
+@layer components {
+
+    .container {
+        @apply max-w-screen-xl mx-auto px-3 sm:px-4 md:px-6 lg:px-11 xl:px-16;
+    }
+}
