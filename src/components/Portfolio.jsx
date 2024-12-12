@@ -6,7 +6,7 @@ import PrimaryButton from "../ui/PrimaryButton";
 
 const Portfolio = () => {
     return (
-        <div className="bg-gray-950 py-10 lg:py-20 mt-10">
+        <div className="bg-[url('https://i.ibb.co.com/QjdcbHF/footer-bg.webp')] bg-cover py-10 lg:py-20 mt-10">
             <div className="text-center text-white">
                 <h3 className="text-themeColor mb-4 bilbo">
                     Our Portfolio

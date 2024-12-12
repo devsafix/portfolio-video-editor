@@ -30,14 +30,14 @@ const States = () => {
     }, [stats]);
 
     return (
-        <div className="bg-gray-900 py-14 lg:mt-10 mt-96">
-            <div className="container grid grid-cols-1 md:grid-cols-4 gap-8 text-center text-white">
+        <div className="bg-[url('https://i.ibb.co.com/QjdcbHF/footer-bg.webp')] bg-cover py-14 lg:mt-10 mt-96">
+            <div className="container grid grid-cols-1 md:grid-cols-4 gap-8 text-center text-[#8A8FB9]">
                 {stats.map((stat, index) => (
                     <div key={index} className="flex flex-col items-center space-y-2">
                         <h1
                             className="text-7xl font-bold text-transparent stroke"
                             style={{
-                                WebkitTextStroke: "2px #20D9A1",
+                                WebkitTextStroke: "2px #8A8FB9",
                                 WebkitTextFillColor: "transparent",
                             }}
                         >

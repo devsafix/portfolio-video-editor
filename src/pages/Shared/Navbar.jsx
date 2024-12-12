@@ -49,7 +49,7 @@ const Navbar = () => {
                         <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-themeColor transition-all duration-300 group-hover:w-full"></span>
                     </li>
                     <li className="group flex font-medium cursor-pointer flex-col">
-                        <Link>About us</Link>
+                        <Link to={"/about-us"}>About us</Link>
                         <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-themeColor transition-all duration-300 group-hover:w-full"></span>
                     </li>
                     <li className="group flex font-medium cursor-pointer flex-col">

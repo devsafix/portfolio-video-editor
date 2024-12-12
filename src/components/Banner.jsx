@@ -3,7 +3,7 @@ import PrimaryButton from "../ui/PrimaryButton";
 
 const Banner = () => {
     return (
-        <div className="bg-gray-950 lg:pt-16 pt-6 relative">
+        <div className="bg-[url('https://i.ibb.co.com/QjdcbHF/footer-bg.webp')] bg-cover lg:pt-16 pt-6 relative">
             <div className="container py-28 text-white ">
                 {/* Left Section */}
                 <div className="flex lg:flex-row flex-col items-center justify-between">
