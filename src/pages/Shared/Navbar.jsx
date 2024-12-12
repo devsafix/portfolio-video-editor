@@ -53,7 +53,7 @@ const Navbar = () => {
                         <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-themeColor transition-all duration-300 group-hover:w-full"></span>
                     </li>
                     <li className="group flex font-medium cursor-pointer flex-col">
-                        <Link>Service</Link>
+                        <Link>Services</Link>
                         <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-themeColor transition-all duration-300 group-hover:w-full"></span>
                     </li>
                     <li className="group flex font-medium cursor-pointer flex-col">
@@ -61,7 +61,7 @@ const Navbar = () => {
                         <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-themeColor transition-all duration-300 group-hover:w-full"></span>
                     </li>
                     <li className="group flex font-medium cursor-pointer flex-col">
-                        <Link>Contact</Link>
+                        <Link to={"/contact-us"}>Contact</Link>
                         <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-themeColor transition-all duration-300 group-hover:w-full"></span>
                     </li>
                 </ul>
