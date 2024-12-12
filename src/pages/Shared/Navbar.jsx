@@ -38,8 +38,7 @@ const Navbar = () => {
                 }`}
         >
             <nav className="container flex items-center justify-between py-3 text-white">
-                <div className="cursor-pointer text-xl font-semibold text-white roboto">
-                    {/* <h3 className="font-normal tracking-wider">Lambup</h3> */}
+                <div>
                     <img 
                     className="lg:w-56 w-40"
                     src="https://lambup.com/wp-content/uploads/2024/10/LUMBUP-1-01-01-e1729165527561-1024x326.png" alt="" />
