@@ -3,6 +3,7 @@ import PrimaryButton from "../ui/PrimaryButton";
 import OutlineButton from "../ui/OutlineButton";
 import { FaBullhorn, FaPhotoVideo } from "react-icons/fa";
 import { GiVideoCamera } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 
 const Service = () => {
@@ -87,7 +88,7 @@ const Service = () => {
                 </div>
 
                 {/* See More Button */}
-                <PrimaryButton title={"See More Services"} />
+                <Link to={"/services"}><PrimaryButton title={"See More Services"} /></Link>
             </div>
         </div>
     );

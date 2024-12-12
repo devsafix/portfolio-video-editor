@@ -1,14 +1,15 @@
 import { useEffect, useRef, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import PrimaryButton from "../../ui/PrimaryButton";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [dropDownState, setDropDownState] = useState(false);
     const dropDownMenuRef = useRef();
+    const location = useLocation();
 
     useEffect(() => {
-        // Handle closing dropdown menu when clicking outside
+        // Close dropdown menu when clicking outside
         const closeDropDown = (e) => {
             if (!dropDownMenuRef?.current?.contains(e?.target)) {
                 setDropDownState(false);
@@ -16,7 +17,7 @@ const Navbar = () => {
         };
         document.addEventListener("mousedown", closeDropDown);
 
-        // Handle navbar background on scroll
+        // Change navbar background on scroll
         const handleScroll = () => {
             if (window.scrollY > 50) {
                 setIsScrolled(true);
@@ -32,36 +33,76 @@ const Navbar = () => {
         };
     }, []);
 
+    const isActiveLink = (path) => location.pathname === path;
+
     return (
         <div
-            className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${isScrolled ? "bg-black shadow-lg" : "bg-transparent"
-                }`}
+            className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
+                isScrolled ? "bg-black shadow-lg" : "bg-transparent"
+            }`}
         >
             <nav className="container flex items-center justify-between py-4 text-white">
-                <div>
+                <Link to={"/"}>
                     <img
                         className="lg:w-56 w-40"
-                        src="https://lambup.com/wp-content/uploads/2024/10/LUMBUP-1-01-01-e1729165527561-1024x326.png" alt="" />
-                </div>
+                        src="https://lambup.com/wp-content/uploads/2024/10/LUMBUP-1-01-01-e1729165527561-1024x326.png"
+                        alt="Logo"
+                    />
+                </Link>
                 <ul className="hidden items-center justify-between gap-10 md:flex">
                     <li className="group flex font-medium cursor-pointer flex-col">
-                        <Link>Home</Link>
+                        <Link
+                            to="/"
+                            className={`${
+                                isActiveLink("/") ? "text-themeColor" : ""
+                            }`}
+                        >
+                            Home
+                        </Link>
                         <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-themeColor transition-all duration-300 group-hover:w-full"></span>
                     </li>
                     <li className="group flex font-medium cursor-pointer flex-col">
-                        <Link to={"/about-us"}>About us</Link>
+                        <Link
+                            to="/about-us"
+                            className={`${
+                                isActiveLink("/about-us") ? "text-themeColor" : ""
+                            }`}
+                        >
+                            About Us
+                        </Link>
                         <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-themeColor transition-all duration-300 group-hover:w-full"></span>
                     </li>
                     <li className="group flex font-medium cursor-pointer flex-col">
-                        <Link>Services</Link>
+                        <Link
+                            to="/services"
+                            className={`${
+                                isActiveLink("/services") ? "text-themeColor" : ""
+                            }`}
+                        >
+                            Services
+                        </Link>
                         <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-themeColor transition-all duration-300 group-hover:w-full"></span>
                     </li>
                     <li className="group flex font-medium cursor-pointer flex-col">
-                        <Link>Portfolio</Link>
+                        <Link
+                            to="/portfolio"
+                            className={`${
+                                isActiveLink("/portfolio") ? "text-themeColor" : ""
+                            }`}
+                        >
+                            Portfolio
+                        </Link>
                         <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-themeColor transition-all duration-300 group-hover:w-full"></span>
                     </li>
                     <li className="group flex font-medium cursor-pointer flex-col">
-                        <Link to={"/contact-us"}>Contact</Link>
+                        <Link
+                            to="/contact-us"
+                            className={`${
+                                isActiveLink("/contact-us") ? "text-themeColor" : ""
+                            }`}
+                        >
+                            Contact
+                        </Link>
                         <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-themeColor transition-all duration-300 group-hover:w-full"></span>
                     </li>
                 </ul>
@@ -94,21 +135,65 @@ const Navbar = () => {
                             data-aos="fade-left"
                             data-aos-delay="50"
                             data-aos-duration="700"
-                            className="z-10 gap-2 bg-gradient-to-b from-teal-600 to-teal-400 absolute right-0 top-14 flex w-[200px] flex-col rounded-lg text-base">
+                            className="z-10 gap-2 bg-gradient-to-b from-teal-600 to-teal-400 absolute right-0 top-14 flex w-[200px] flex-col rounded-lg text-base"
+                        >
                             <li className="cursor-pointer px-6 py-2 text-white rounded-t-lg hover:bg-sky-600">
-                                <Link>Home</Link>
+                                <Link
+                                    to="/"
+                                    className={`${
+                                        isActiveLink("/") ? "text-themeColor" : ""
+                                    }`}
+                                >
+                                    Home
+                                </Link>
                             </li>
                             <li className="cursor-pointer px-6 py-2 text-white hover:bg-sky-600">
-                                <Link>About Us</Link>
+                                <Link
+                                    to="/about-us"
+                                    className={`${
+                                        isActiveLink("/about-us")
+                                            ? "text-themeColor"
+                                            : ""
+                                    }`}
+                                >
+                                    About Us
+                                </Link>
                             </li>
                             <li className="cursor-pointer px-6 py-2 text-white hover:bg-sky-600">
-                                <Link>Service</Link>
+                                <Link
+                                    to="/services"
+                                    className={`${
+                                        isActiveLink("/services")
+                                            ? "text-themeColor"
+                                            : ""
+                                    }`}
+                                >
+                                    Services
+                                </Link>
                             </li>
                             <li className="cursor-pointer px-6 py-2 text-white hover:bg-sky-600">
-                                <Link>Portfolio</Link>
+                                <Link
+                                    to="/portfolio"
+                                    className={`${
+                                        isActiveLink("/portfolio")
+                                            ? "text-themeColor"
+                                            : ""
+                                    }`}
+                                >
+                                    Portfolio
+                                </Link>
                             </li>
                             <li className="cursor-pointer px-6 py-2 text-white hover:bg-sky-600">
-                                <Link>Contact</Link>
+                                <Link
+                                    to="/contact-us"
+                                    className={`${
+                                        isActiveLink("/contact-us")
+                                            ? "text-themeColor"
+                                            : ""
+                                    }`}
+                                >
+                                    Contact
+                                </Link>
                             </li>
                         </ul>
                     )}
