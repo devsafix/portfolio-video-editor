@@ -9,7 +9,7 @@ const About = () => {
                         <img
                             src="https://lambup.com/wp-content/uploads/2024/10/About-Image-4.png"
                             alt="Editing Screen"
-                            className="w-[100px] h-[100px] lg:w-[170px] lg:h-[170px] rounded-full object-cover"
+                            className="w-[100px] h-[100px] lg:w-[140px] lg:h-[140px] xl:w-[170px] xl:h-[170px] rounded-full object-cover"
                         />
                     </div>
                     <div className="absolute lg:-top-[50px] lg:-left-16 left-0 -bottom-96 animate-up-down">
@@ -21,11 +21,11 @@ const About = () => {
                     </div>
 
                     {/* Middle Right Image */}
-                    <div className="absolute lg:top-0 lg:left-[350px] rounded-full border-2 border-themeColor p-2 shadow-lg animate-scale  lg:block hidden">
+                    <div className="absolute xl:top-0 lg:top-10 xl:left-[350px] lg:left-[270px] rounded-full border-2 border-themeColor p-2 shadow-lg animate-scale  lg:block hidden">
                         <img
                             src="https://lambup.com/wp-content/uploads/2024/10/About-Image-2.png"
                             alt="Video Editing"
-                            className="w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] rounded-full object-cover"
+                            className="w-[200px] h-[200px] xl:w-[300px] xl:h-[300px] rounded-full object-cover"
                         />
                     </div>
 
@@ -39,7 +39,7 @@ const About = () => {
                     </div>
 
                     {/* Bottom Right Image */}
-                    <div className="absolute lg:-bottom-[70px] -bottom-96 lg:left-[500px] rounded-full border-2 border-themeColor p-2 shadow-lg animate-scale lg:block">
+                    <div className="absolute lg:-bottom-[70px] -bottom-96 lg:left-72 xl:left-[500px] rounded-full border-2 border-themeColor p-2 shadow-lg animate-scale lg:block">
                         <img
                             src="https://lambup.com/wp-content/uploads/2024/10/About-Image-5.png"
                             alt="Editing Tools"

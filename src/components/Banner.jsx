@@ -7,7 +7,7 @@ const Banner = () => {
             <div className="container py-28 text-white ">
                 {/* Left Section */}
                 <div className="flex lg:flex-row flex-col items-center justify-between">
-                    <div className="max-w-2xl">
+                    <div className="xl:max-w-2xl max-w-xl">
                         <h1 className="text-themeColor text-3xl italic mb-3 bilbo-text">Creative Thinking</h1>
                         <h1 className="leading-tight mb-6">
                             Strategic Thinking, Tangible Results for you!
@@ -40,15 +40,15 @@ const Banner = () => {
                             <img
                                 src="https://lambup.com/wp-content/uploads/2024/10/Home-Page-Image-2.png"
                                 alt="Editing Screen"
-                                className="rounded-full w-[350px] h-[550px] lg:w-[370px] lg:h-[550px] inset-0 object-cover bg-cover bg-center"
+                                className="rounded-full w-[350px] h-[550px] xl:w-[370px] xl:h-[550px] inset-0 object-cover bg-cover bg-center"
                             />
                         </div>
-                        <div className="absolute bottom-7 lg:-left-40  rounded-full bg-gray-700 p-2 animate-scale">
+                        <div className="absolute bottom-7 xl:-left-40 lg:-left-10  rounded-full bg-gray-700 p-2 animate-scale">
 
                             <img
                                 src="https://lambup.com/wp-content/uploads/2024/10/Home-Page-Image-1.png"
                                 alt="Editing Screen"
-                                className="rounded-full w-[200px] h-[300px] lg:w-[250px] lg:h-[350px] inset-0 object-cover bg-cover bg-center"
+                                className="rounded-full w-[170px] h-[270px] lg:w-40 xl:w-[250px] xl:h-[350px] inset-0 object-cover bg-cover bg-center"
                             />
                         </div>
                     </div>

@@ -55,17 +55,17 @@ body {
 /* font size */
 @layer base {
   h1 {
-    @apply lg:text-[45px] text-[35px];
+    @apply xl:text-[45px] lg:text-[40px] text-[35px];
     @apply font-bold;
   }
 
   h2 {
-    @apply lg:text-[40px] text-[30px];
+    @apply xl:text-[40px] lg:text-[35px] text-[30px];
     @apply font-bold;
   }
 
   h3 {
-    @apply lg:text-[35px] text-[22px];
+    @apply xl:text-[35px] lg:text-[30px] text-[22px];
     @apply font-bold;
   }
 
