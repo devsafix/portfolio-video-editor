@@ -51,7 +51,7 @@ const About = () => {
 
                 {/* Right Section with Content */}
                 <div className="max-w-lg text-gray-800">
-                    <h3 className="font-semibold text-themeColor mb-4">
+                    <h3 className="bilbo text-themeColor mb-4">
                         About Us
                     </h3>
                     <h2 className="font-bold mb-6">
