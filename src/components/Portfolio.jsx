@@ -2,6 +2,7 @@ import Marquee from "react-fast-marquee";
 import { TiMediaPlay } from "react-icons/ti";
 import { Typewriter } from "react-simple-typewriter";
 import PrimaryButton from "../ui/PrimaryButton";
+import { Link } from "react-router-dom";
 
 
 const Portfolio = () => {
@@ -40,7 +41,7 @@ const Portfolio = () => {
                             <div className="relative w-[400px] h-60 mr-8 rounded-lg group overflow-hidden">
                                 {/* Background Image */}
                                 <img
-                                    src="https://lambup.com/wp-content/uploads/2024/10/lambup-2.jpg"
+                                    src="https://i.ytimg.com/vi/dYYeD1y95Tc/maxresdefault.jpg"
                                     alt="Portfolio Item 3"
                                     className="w-full h-full rounded-lg object-cover group-hover:scale-105 transition-all duration-500"
                                 />
@@ -60,7 +61,7 @@ const Portfolio = () => {
                             <div className="relative w-[400px] h-60 mr-8 rounded-lg group overflow-hidden">
                                 {/* Background Image */}
                                 <img
-                                    src="https://lambup.com/wp-content/uploads/2024/10/12.png"
+                                    src="https://i.ytimg.com/vi/ZmN2T5X-9Bg/maxresdefault.jpg"
                                     alt="Portfolio Item 3"
                                     className="w-full h-full rounded-lg object-cover group-hover:scale-105 transition-all duration-500"
                                 />
@@ -80,7 +81,7 @@ const Portfolio = () => {
                             <div className="relative w-[400px] h-60 mr-8 rounded-lg group overflow-hidden">
                                 {/* Background Image */}
                                 <img
-                                    src="https://lambup.com/wp-content/uploads/2024/10/lambup-5.jpg"
+                                    src="https://i.ytimg.com/vi/WA6-KmDi5Zs/maxresdefault.jpg"
                                     alt="Portfolio Item 3"
                                     className="w-full h-full rounded-lg object-cover group-hover:scale-105 transition-all duration-500"
                                 />
@@ -100,7 +101,7 @@ const Portfolio = () => {
                             <div className="relative w-[400px] h-60 mr-8 rounded-lg group overflow-hidden">
                                 {/* Background Image */}
                                 <img
-                                    src="https://lambup.com/wp-content/uploads/2024/10/lambup-1.jpg"
+                                    src="https://i.ytimg.com/vi/vo3IDBIP36M/maxresdefault.jpg"
                                     alt="Portfolio Item 3"
                                     className="w-full h-full rounded-lg object-cover group-hover:scale-105 transition-all duration-500"
                                 />
@@ -120,7 +121,7 @@ const Portfolio = () => {
                             <div className="relative w-[400px] h-60 mr-8 rounded-lg group overflow-hidden">
                                 {/* Background Image */}
                                 <img
-                                    src="https://lambup.com/wp-content/uploads/2024/10/lambup-4.jpg"
+                                    src="https://i.ytimg.com/vi/H0nZy0Q2pc4/maxresdefault.jpg"
                                     alt="Portfolio Item 3"
                                     className="w-full h-full rounded-lg object-cover group-hover:scale-105 transition-all duration-500"
                                 />
@@ -140,7 +141,7 @@ const Portfolio = () => {
                             <div className="relative w-[400px] h-60 mr-8 rounded-lg group overflow-hidden">
                                 {/* Background Image */}
                                 <img
-                                    src="https://lambup.com/wp-content/uploads/2024/10/lambup-3.jpg"
+                                    src="https://i.ytimg.com/vi/cISvMYFvR4M/maxresdefault.jpg"
                                     alt="Portfolio Item 3"
                                     className="w-full h-full rounded-lg object-cover group-hover:scale-105 transition-all duration-500"
                                 />
@@ -178,9 +179,9 @@ const Portfolio = () => {
                 </div>
             </div>
 
-            <div className="mt-10 flex justify-center">
+            <Link to={"/portfolio"} className="mt-10 flex justify-center">
                 <PrimaryButton title={"See More Portfolio"} />
-            </div>
+            </Link>
 
         </div>
     );

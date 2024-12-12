@@ -54,7 +54,7 @@ const Testimonials = () => {
                         <SwiperSlide>
                             <div className="bg-white p-10 rounded-xl text-center max-w-sm mx-auto mb-14">
                                 {/* Testimonial Text */}
-                                <p className="text-gray-500 italic">
+                                <p className="text-gray-500">
                                     I loved the video editing services from Lambup! They transformed my raw footage into a polished video that perfectly captured my vision. Highly recommended!
                                 </p>
 
@@ -78,7 +78,7 @@ const Testimonials = () => {
                         <SwiperSlide>
                             <div className="bg-white p-10 rounded-xl text-center max-w-sm mx-auto">
                                 {/* Testimonial Text */}
-                                <p className="text-gray-500 italic">
+                                <p className="text-gray-500">
                                     The motion graphics from Lambup were amazing! They added creativity and flair to my project, making it really stand out. I could not be happier with the results!
                                 </p>
 
@@ -102,7 +102,7 @@ const Testimonials = () => {
                         <SwiperSlide>
                             <div className="bg-white p-10 rounded-xl text-center max-w-sm mx-auto">
                                 {/* Testimonial Text */}
-                                <p className="text-gray-500 italic">
+                                <p className="text-gray-500">
                                     Lambup did a fantastic job editing my short videos! They made them look professional and engaging. I highly recommend their services!
                                 </p>
 
@@ -126,7 +126,7 @@ const Testimonials = () => {
                         <SwiperSlide>
                             <div className="bg-white p-10 rounded-xl text-center max-w-sm mx-auto">
                                 {/* Testimonial Text */}
-                                <p className="text-gray-500 italic">
+                                <p className="text-gray-500">
                                     The thumbnails designed by Lambup were perfect! They grabbed attention and helped my videos get more views. I am really impressed!
                                 </p>
 
