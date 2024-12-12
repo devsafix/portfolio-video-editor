@@ -14,6 +14,8 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
+/* --------------------------------------------------------------- */
+
 /* Scale Animation */
 @keyframes scale-up {
 
@@ -48,6 +50,7 @@ body {
   animation: up-down 2s infinite ease-in-out;
 }
 
+/* ----------------------------------------------------------------------------- */
 
 /* font size */
 @layer base {
