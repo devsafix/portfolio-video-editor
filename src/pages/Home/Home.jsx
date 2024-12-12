@@ -1,5 +1,6 @@
 import About from "../../components/About";
 import Banner from "../../components/Banner";
+import Contact from "../../components/Contact";
 import Portfolio from "../../components/Portfolio";
 import Service from "../../components/Service";
 import States from "../../components/States";
@@ -15,6 +16,7 @@ const Home = () => {
             <Service />
             <Portfolio />
             <Testimonials />
+            <Contact />
         </div>
     );
 };
