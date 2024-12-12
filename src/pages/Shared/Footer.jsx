@@ -66,7 +66,7 @@ const Footer = () => {
             </div>
 
             {/* Bottom Bar */}
-            <div className="border-t border-gray-600 mt-8 pt-4 text-center text-gray-400">
+            <div className="border-t border-gray-700 mt-8 pt-4 text-center text-gray-400">
                 <p>Copyright © 2024 lambup.com All Rights Reserved.</p>
                 <div className="flex justify-center space-x-4 mt-2">
                     <a href="#" className="hover:text-themeColor transition-all duration-300">Privacy Policy</a>
