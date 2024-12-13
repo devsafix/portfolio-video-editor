@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import PrimaryButton from "../../ui/PrimaryButton";
+import logo  from "../../assets/Asset-1.png"
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -37,15 +38,14 @@ const Navbar = () => {
 
     return (
         <div
-            className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
-                isScrolled ? "bg-black shadow-lg" : "bg-transparent"
-            }`}
+            className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${isScrolled ? "bg-black shadow-lg" : "bg-transparent"
+                }`}
         >
             <nav className="container flex items-center justify-between py-4 text-white">
                 <Link to={"/"}>
                     <img
-                        className="lg:w-56 w-40"
-                        src="https://lambup.com/wp-content/uploads/2024/10/LUMBUP-1-01-01-e1729165527561-1024x326.png"
+                        className="lg:w-[70px] w-16"
+                        src={logo}
                         alt="Logo"
                     />
                 </Link>
@@ -53,9 +53,8 @@ const Navbar = () => {
                     <li className="group flex font-medium cursor-pointer flex-col">
                         <Link
                             to="/"
-                            className={`${
-                                isActiveLink("/") ? "text-themeColor" : ""
-                            }`}
+                            className={`${isActiveLink("/") ? "text-themeColor" : ""
+                                }`}
                         >
                             Home
                         </Link>
@@ -64,9 +63,8 @@ const Navbar = () => {
                     <li className="group flex font-medium cursor-pointer flex-col">
                         <Link
                             to="/about-us"
-                            className={`${
-                                isActiveLink("/about-us") ? "text-themeColor" : ""
-                            }`}
+                            className={`${isActiveLink("/about-us") ? "text-themeColor" : ""
+                                }`}
                         >
                             About Us
                         </Link>
@@ -75,9 +73,8 @@ const Navbar = () => {
                     <li className="group flex font-medium cursor-pointer flex-col">
                         <Link
                             to="/services"
-                            className={`${
-                                isActiveLink("/services") ? "text-themeColor" : ""
-                            }`}
+                            className={`${isActiveLink("/services") ? "text-themeColor" : ""
+                                }`}
                         >
                             Services
                         </Link>
@@ -86,9 +83,8 @@ const Navbar = () => {
                     <li className="group flex font-medium cursor-pointer flex-col">
                         <Link
                             to="/portfolio"
-                            className={`${
-                                isActiveLink("/portfolio") ? "text-themeColor" : ""
-                            }`}
+                            className={`${isActiveLink("/portfolio") ? "text-themeColor" : ""
+                                }`}
                         >
                             Portfolio
                         </Link>
@@ -97,9 +93,8 @@ const Navbar = () => {
                     <li className="group flex font-medium cursor-pointer flex-col">
                         <Link
                             to="/contact-us"
-                            className={`${
-                                isActiveLink("/contact-us") ? "text-themeColor" : ""
-                            }`}
+                            className={`${isActiveLink("/contact-us") ? "text-themeColor" : ""
+                                }`}
                         >
                             Contact
                         </Link>
@@ -140,9 +135,8 @@ const Navbar = () => {
                             <li className="cursor-pointer px-6 py-2 text-white rounded-t-lg hover:bg-sky-600">
                                 <Link
                                     to="/"
-                                    className={`${
-                                        isActiveLink("/") ? "text-themeColor" : ""
-                                    }`}
+                                    className={`${isActiveLink("/") ? "text-black" : ""
+                                        }`}
                                 >
                                     Home
                                 </Link>
@@ -150,11 +144,10 @@ const Navbar = () => {
                             <li className="cursor-pointer px-6 py-2 text-white hover:bg-sky-600">
                                 <Link
                                     to="/about-us"
-                                    className={`${
-                                        isActiveLink("/about-us")
-                                            ? "text-themeColor"
+                                    className={`${isActiveLink("/about-us")
+                                            ? "text-black"
                                             : ""
-                                    }`}
+                                        }`}
                                 >
                                     About Us
                                 </Link>
@@ -162,11 +155,10 @@ const Navbar = () => {
                             <li className="cursor-pointer px-6 py-2 text-white hover:bg-sky-600">
                                 <Link
                                     to="/services"
-                                    className={`${
-                                        isActiveLink("/services")
-                                            ? "text-themeColor"
+                                    className={`${isActiveLink("/services")
+                                            ? "text-black"
                                             : ""
-                                    }`}
+                                        }`}
                                 >
                                     Services
                                 </Link>
@@ -174,11 +166,10 @@ const Navbar = () => {
                             <li className="cursor-pointer px-6 py-2 text-white hover:bg-sky-600">
                                 <Link
                                     to="/portfolio"
-                                    className={`${
-                                        isActiveLink("/portfolio")
-                                            ? "text-themeColor"
+                                    className={`${isActiveLink("/portfolio")
+                                            ? "text-black"
                                             : ""
-                                    }`}
+                                        }`}
                                 >
                                     Portfolio
                                 </Link>
@@ -186,11 +177,10 @@ const Navbar = () => {
                             <li className="cursor-pointer px-6 py-2 text-white hover:bg-sky-600">
                                 <Link
                                     to="/contact-us"
-                                    className={`${
-                                        isActiveLink("/contact-us")
-                                            ? "text-themeColor"
+                                    className={`${isActiveLink("/contact-us")
+                                            ? "text-black"
                                             : ""
-                                    }`}
+                                        }`}
                                 >
                                     Contact
                                 </Link>

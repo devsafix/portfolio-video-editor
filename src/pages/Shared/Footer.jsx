@@ -1,6 +1,8 @@
 import { FaFacebookF, FaInstagram, FaLinkedin, FaPhoneSquareAlt, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
+import { Link } from "react-router-dom";
+import logo from "../../assets/Asset-1.png"
 
 const Footer = () => {
     return (
@@ -8,11 +10,13 @@ const Footer = () => {
             <div className="container px-8 grid grid-cols-1 md:grid-cols-3 gap-14">
                 {/* Logo and Description */}
                 <div className="flex flex-col gap-3 items-center md:items-start">
-                    <div>
+                    <Link to={"/"}>
                         <img
-                            className="lg:w-56 w-40"
-                            src="https://lambup.com/wp-content/uploads/2024/10/LUMBUP-1-01-01-e1729165527561-1024x326.png" alt="" />
-                    </div>
+                            className="lg:w-[70px] w-16"
+                            src={logo}
+                            alt="Logo"
+                        />
+                    </Link>
                     <p className="text-gray-400 text-center md:text-left">
                         Empowering brands with innovative digital solutions. From Video Editing to marketing
                         strategies, we’re here to help you thrive online. Connect with us today!
