@@ -35,7 +35,7 @@ const Banner = () => {
                     </div>
                     {/* Right Section */}
                     <div className="relative mt-12 lg:mt-0">
-                        <div className="rounded-full bg-gradient-to-r from-teal-400 to-green-600 p-1 animate-up-down">
+                        <div className="rounded-full bg-themeColor p-1 animate-up-down">
 
                             <img
                                 src="https://lambup.com/wp-content/uploads/2024/10/Home-Page-Image-2.png"

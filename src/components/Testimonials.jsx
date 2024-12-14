@@ -14,7 +14,7 @@ const Testimonials = () => {
         <div className="bg-[url('https://i.ibb.co/VMcX0bt/bg-41.jpg')] bg-cover">
             <div className="container py-20">
                 <div className="text-center">
-                    <h3 className="text-green-700 bilbo">
+                    <h3 className="text-themeColor bilbo">
                         Testimonials
                     </h3>
                     <h1 className="my-3 max-w-xl mx-auto">
@@ -69,7 +69,7 @@ const Testimonials = () => {
 
                                     {/* Profile Details */}
                                     <div className="ml-4 text-left">
-                                        <h4 className="text-green-700 font-bold roboto">Lique Ray</h4>
+                                        <h4 className="text-themeColor font-bold roboto">Lique Ray</h4>
                                         <p className="text-gray-500 text-sm">Professional content creator</p>
                                     </div>
                                 </div>
@@ -93,7 +93,7 @@ const Testimonials = () => {
 
                                     {/* Profile Details */}
                                     <div className="ml-4 text-left">
-                                        <h4 className="text-green-700 font-bold roboto">Waliur</h4>
+                                        <h4 className="text-themeColor font-bold roboto">Waliur</h4>
                                         <p className="text-gray-500 text-sm">Professional content creator</p>
                                     </div>
                                 </div>
@@ -117,7 +117,7 @@ const Testimonials = () => {
 
                                     {/* Profile Details */}
                                     <div className="ml-4 text-left">
-                                        <h4 className="text-green-700 font-bold roboto">Ash Alles</h4>
+                                        <h4 className="text-themeColor font-bold roboto">Ash Alles</h4>
                                         <p className="text-gray-500 text-sm">Real Estate Agent</p>
                                     </div>
                                 </div>
@@ -141,7 +141,7 @@ const Testimonials = () => {
 
                                     {/* Profile Details */}
                                     <div className="ml-4 text-left">
-                                        <h4 className="text-green-700 font-bold roboto">Looise</h4>
+                                        <h4 className="text-themeColor font-bold roboto">Looise</h4>
                                         <p className="text-gray-500 text-sm">Professional content creator</p>
                                     </div>
                                 </div>

@@ -18,7 +18,7 @@ const Contact = () => {
                     {/* Contact Info */}
                     <div className="space-y-4">
                         <div className="flex items-center space-x-4">
-                            <div className="bg-teal-500 text-white w-12 h-12 flex items-center justify-center rounded-full">
+                            <div className="bg-themeColor text-white w-12 h-12 flex items-center justify-center rounded-full">
                                 <FaPhoneSquareAlt className="text-xl" />
                             </div>
                             <div>
@@ -27,7 +27,7 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className="flex items-center space-x-4">
-                            <div className="bg-teal-500 text-white w-12 h-12 flex items-center justify-center rounded-full">
+                            <div className="bg-themeColor text-white w-12 h-12 flex items-center justify-center rounded-full">
                                 <MdEmail className="text-xl" />
                             </div>
                             <div>
@@ -83,7 +83,7 @@ const Contact = () => {
                         {/* Submit Button */}
                         <button
                             type="submit"
-                            className="w-full bg-gradient-to-r from-teal-600 to-teal-400 hover:from-teal-400 hover:to-teal-600 text-white font-bold py-3 px-4 rounded-lg focus:ring-4 focus:ring-teal-300 transition duration-300"
+                            className="w-full bg-themeColor text-white font-bold py-3 px-4 rounded-lg focus:ring-4 focus:ring-teal-300 transition duration-300"
                         >
                             Submit Now
                         </button>

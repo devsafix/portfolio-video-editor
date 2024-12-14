@@ -42,7 +42,7 @@ const Service = () => {
                     >
                         <div className="flex justify-center items-center mb-4">
                             {/* Ensure group-hover works */}
-                            <div className="bg-black group-hover:bg-gradient-to-b from-teal-400 to-teal-600 rounded-full p-4 shadow-lg transition-all duration-700">
+                            <div className="bg-black group-hover:bg-themeColor rounded-full p-4 shadow-lg transition-all duration-700">
                                 <div className="text-white">
                                     <FaPhotoVideo className="size-12" />
                                 </div>
@@ -60,7 +60,7 @@ const Service = () => {
                         className="bg-white border border-themeColor hover:border-gray-700 rounded-xl p-6 hover:shadow-2xl transition-shadow duration-500 group"
                     >
                         <div className="flex justify-center items-center mb-4">
-                            <div className="bg-black group-hover:bg-gradient-to-b from-teal-400 to-teal-600 rounded-full p-4 shadow-lg transition-all duration-700">
+                            <div className="bg-black group-hover:bg-themeColor rounded-full p-4 shadow-lg transition-all duration-700">
                                 <div className="text-white">
                                     <GiVideoCamera className="size-12" />
                                 </div>
@@ -75,7 +75,7 @@ const Service = () => {
                         className="bg-white border border-themeColor hover:border-gray-700 rounded-xl p-6 hover:shadow-2xl transition-shadow duration-500 group"
                     >
                         <div className="flex justify-center items-center mb-4">
-                            <div className="bg-black group-hover:bg-gradient-to-b from-teal-400 to-teal-600 rounded-full p-4 shadow-lg transition-all duration-700">
+                            <div className="bg-black group-hover:bg-themeColor rounded-full p-4 shadow-lg transition-all duration-700">
                                 <div className="text-white">
                                     <FaBullhorn className="size-12" />
                                 </div>
