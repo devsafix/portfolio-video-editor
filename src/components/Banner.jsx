@@ -43,7 +43,7 @@ const Banner = () => {
                                 className="rounded-full w-[350px] h-[550px] xl:w-[370px] xl:h-[550px] inset-0 object-cover bg-cover bg-center"
                             />
                         </div>
-                        <div className="absolute bottom-7 xl:-left-40 lg:-left-10  rounded-full bg-gray-700 p-2 animate-scale">
+                        <div className="absolute bottom-7 xl:-left-40 lg:-left-10  rounded-full bg-cyan-700 p-2 animate-scale">
 
                             <img
                                 src="https://lambup.com/wp-content/uploads/2024/10/Home-Page-Image-1.png"
