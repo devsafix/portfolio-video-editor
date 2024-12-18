@@ -12,7 +12,7 @@ const Contact = () => {
                         Have any Project Plan In your Mind?
                     </h2>
                     <p className="text-gray-600 mb-8">
-                        Have questions or need help with your digital projects? Reach out to Lambup! We’re here to
+                        Have questions or need help with your digital projects? Reach out to G1Visuals! We’re here to
                         assist you with web design, marketing, and more. Let’s discuss how we can help your business grow.
                     </p>
                     {/* Contact Info */}
@@ -23,7 +23,7 @@ const Contact = () => {
                             </div>
                             <div>
                                 <p className="text-gray-600">For urgent help</p>
-                                <p className="text-gray-800 font-medium">+880 18 69-477538</p>
+                                <p className="text-gray-800 font-medium">+880 1718211194</p>
                             </div>
                         </div>
                         <div className="flex items-center space-x-4">
@@ -32,7 +32,7 @@ const Contact = () => {
                             </div>
                             <div>
                                 <p className="text-gray-600">Mail us 24/7</p>
-                                <p className="text-gray-800 font-medium">lambup58@gmail.com</p>
+                                <p className="text-gray-800 font-medium">connect@g1visuals.net</p>
                             </div>
                         </div>
                     </div>

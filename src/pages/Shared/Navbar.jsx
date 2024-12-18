@@ -1,13 +1,18 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import PrimaryButton from "../../ui/PrimaryButton";
-import logo  from "../../assets/Asset-1.png"
+import logo  from "../../assets/G1 Visuals logo.png"
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [dropDownState, setDropDownState] = useState(false);
     const dropDownMenuRef = useRef();
     const location = useLocation();
+
+    const handleRedirect = () => {
+        // Redirect to your WhatsApp profile
+        window.open("https://wa.me/8801718211194", "_blank");
+    };
 
     useEffect(() => {
         // Close dropdown menu when clicking outside
@@ -44,7 +49,7 @@ const Navbar = () => {
             <nav className="container flex items-center justify-between py-4 text-white">
                 <Link to={"/"}>
                     <img
-                        className="lg:w-[70px] w-16"
+                        className="lg:w-24 w-20"
                         src={logo}
                         alt="Logo"
                     />
@@ -101,7 +106,7 @@ const Navbar = () => {
                         <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-themeColor transition-all duration-300 group-hover:w-full"></span>
                     </li>
                 </ul>
-                <div>
+                <div onClick={handleRedirect}>
                     <PrimaryButton title={"Let's Talk Us"} />
                 </div>
                 <div

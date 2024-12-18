@@ -102,7 +102,7 @@ const PortfolioPage = () => {
 
             {/* Modal */}
             {isModalOpen && (
-                <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
+                <div data-aos="fade" className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
                     <div className="bg-white mx-2 rounded-lg lg:p-8 p-6 relative max-w-4xl w-full">
                         <button
                             onClick={closeModal}
@@ -133,7 +133,7 @@ const PortfolioContent = ({ data, openModal }) => (
             <div
                 key={index}
                 className="relative xl:w-[400px] xl:h-60 lg:w-72 lg:h-40 rounded-lg group overflow-hidden cursor-pointer"
-                
+
             >
                 {/* Background Image */}
                 <img

@@ -1,10 +1,30 @@
 import { Typewriter } from "react-simple-typewriter";
 import PrimaryButton from "../ui/PrimaryButton";
+import Video from "../assets/banner video.mp4";
 
 const Banner = () => {
+
+    const handleRedirect = () => {
+        // Redirect to your WhatsApp profile
+        window.open("https://wa.me/8801718211194", "_blank");
+    };
+
     return (
-        <div className="bg-[url('https://i.ibb.co.com/QjdcbHF/footer-bg.webp')] bg-cover lg:pt-16 pt-6 relative">
-            <div className="container py-28 text-white ">
+        <div className="relative bg-black overflow-hidden lg:pt-16 pt-6">
+            {/* Video Background */}
+            <video
+                className="absolute inset-0 opacity-50 w-full h-full object-cover"
+                src={Video}
+                autoPlay
+                loop
+                muted
+                playsInline
+            ></video>
+
+            {/* Overlay for darker background */}
+            <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+
+            <div className="container relative z-10 py-28 text-white">
                 {/* Left Section */}
                 <div className="flex lg:flex-row flex-col items-center justify-between">
                     <div className="xl:max-w-2xl max-w-xl">
@@ -13,12 +33,13 @@ const Banner = () => {
                             Strategic Thinking, Tangible Results for you!
                         </h1>
                         <h3 className="mb-7">
-                            We Provide <span className="text-themeColor lg:text-[40px] text-[25px]">
+                            We Provide{" "}
+                            <span className="text-themeColor lg:text-[40px] text-[25px]">
                                 <Typewriter
-                                    words={['Video Editing', 'Motion Graphics', 'Cinematography']}
+                                    words={['Video Editing', 'Motion Graphics', 'Sitdown Video', 'Explainer Video', 'Collage Art Video']}
                                     loop={5}
                                     cursor
-                                    cursorStyle='|'
+                                    cursorStyle="|"
                                     typeSpeed={70}
                                     deleteSpeed={50}
                                     delaySpeed={1000}
@@ -26,45 +47,29 @@ const Banner = () => {
                             </span>
                         </h3>
                         <p className="text-gray-400 mb-7">
-                            We are a leading digital services provider, offering solutions for online
-                            business success. Our expert team delivers customized Video Editing,
-                            Motion Graphics, and IT support to achieve results in the evolving
-                            digital landscape. Count on us to guide you.
+                            We specialize in dynamic Video Editing and compelling Motion Graphics, helping businesses grow in the ever-evolving digital realm. Let’s build something extraordinary together.
                         </p>
-                        <PrimaryButton title={"Explore Now"} />
+                        <div onClick={handleRedirect}><PrimaryButton title={"Explore Now"} /></div>
                     </div>
+
                     {/* Right Section */}
                     <div className="relative mt-12 lg:mt-0">
                         <div className="rounded-full bg-themeColor p-1 animate-up-down">
-
                             <img
                                 src="https://lambup.com/wp-content/uploads/2024/10/Home-Page-Image-2.png"
                                 alt="Editing Screen"
-                                className="rounded-full w-[350px] h-[550px] xl:w-[370px] xl:h-[550px] inset-0 object-cover bg-cover bg-center"
+                                className="rounded-full w-[350px] h-[550px] xl:w-[370px] xl:h-[550px] object-cover bg-cover bg-center"
                             />
                         </div>
-                        <div className="absolute bottom-7 xl:-left-40 lg:-left-10  rounded-full bg-cyan-700 p-2 animate-scale">
-
+                        <div className="absolute bottom-7 xl:-left-40 lg:-left-10 rounded-full bg-gray-600 p-2 animate-scale">
                             <img
                                 src="https://lambup.com/wp-content/uploads/2024/10/Home-Page-Image-1.png"
                                 alt="Editing Screen"
-                                className="rounded-full w-[170px] h-[270px] lg:w-40 xl:w-[250px] xl:h-[350px] inset-0 object-cover bg-cover bg-center"
+                                className="rounded-full w-[170px] h-[270px] lg:w-40 xl:w-[250px] xl:h-[350px] object-cover bg-cover bg-center"
                             />
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="absolute lg:block hidden right-40 top-32 animate-scale">
-                <img src="https://lambup.com/wp-content/uploads/2024/10/hero-shape-6.webp" alt="" />
-            </div>
-            <div className="absolute lg:block hidden left-10 top-32 animate-up-down size-40 opacity-30">
-                <img src="https://lambup.com/wp-content/uploads/2024/10/shape-35.png" alt="" />
-            </div>
-            <div className="absolute lg:block hidden right-[700px] top-32 animate-up-down size-40 opacity-30">
-                <img src="https://lambup.com/wp-content/uploads/2024/10/hero-shape-3.webp" alt="" />
-            </div>
-            <div className="absolute lg:block hidden right-[650px] bottom-20 animate-scale size-40">
-                <img src="https://lambup.com/wp-content/uploads/2024/10/hero-shape-6.webp" alt="" />
             </div>
         </div>
     );

@@ -2,7 +2,7 @@ import { FaFacebookF, FaInstagram, FaLinkedin, FaPhoneSquareAlt, FaTwitter, FaWh
 import { IoLocationSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
-import logo from "../../assets/Asset-1.png"
+import logo  from "../../assets/G1 Visuals logo.png"
 
 const Footer = () => {
     return (
@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="flex flex-col gap-3 items-center md:items-start">
                     <Link to={"/"}>
                         <img
-                            className="lg:w-[70px] w-16"
+                            className="lg:w-24 w-20"
                             src={logo}
                             alt="Logo"
                         />
@@ -57,10 +57,10 @@ const Footer = () => {
                     <h3 className="mb-4 text-themeColor">Contact Us</h3>
                     <ul className="space-y-3 text-gray-400">
                         <li className="flex items-center gap-1 hover:text-themeColor duration-300 transition-all cursor-pointer">
-                            <FaPhoneSquareAlt className="text-themeColor" /> +880 1869-477538
+                            <FaPhoneSquareAlt className="text-themeColor" /> +880 1718211194
                         </li>
                         <li className="flex items-center gap-1 hover:text-themeColor duration-300 transition-all cursor-pointer">
-                            <MdEmail className="text-themeColor" /> lambup58@gmail.com
+                            <MdEmail className="text-themeColor" /> connect@g1visuals.net
                         </li>
                         <li className="flex items-center gap-1 hover:text-themeColor duration-300 transition-all cursor-pointer">
                             <IoLocationSharp className="text-themeColor" /> Dhaka, Bangladesh
@@ -71,7 +71,7 @@ const Footer = () => {
 
             {/* Bottom Bar */}
             <div className="border-t border-gray-700 mt-8 pt-4 text-center text-gray-400">
-                <p>Copyright © 2024 lambup.com All Rights Reserved.</p>
+                <p>Copyright © 2024 G1Visuals.com All Rights Reserved.</p>
                 <div className="flex justify-center space-x-4 mt-2">
                     <a href="#" className="hover:text-themeColor transition-all duration-300">Privacy Policy</a>
                     <a href="#" className="hover:text-themeColor transition-all duration-300">Terms & Condition</a>

@@ -39,7 +39,7 @@ const About = () => {
                     </div>
 
                     {/* Bottom Right Image */}
-                    <div className="absolute lg:-bottom-[70px] -bottom-96 lg:left-72 xl:left-[500px] rounded-full border-2 border-themeColor p-2 shadow-lg animate-scale lg:block">
+                    <div className="absolute lg:-bottom-[50px] -bottom-96 lg:left-72 xl:left-[500px] rounded-full border-2 border-themeColor p-2 shadow-lg animate-scale lg:block">
                         <img
                             src="https://lambup.com/wp-content/uploads/2024/10/About-Image-5.png"
                             alt="Editing Tools"
@@ -55,10 +55,16 @@ const About = () => {
                         About Us
                     </h3>
                     <h2 className="font-bold mb-6">
-                        Crafting Stunning Videos with Precision & Creativity
+                        Transforming Ideas into Perfectly Crafted Videos
                     </h2>
+                    <p className="text-gray-600">
+                        At G1 Visuals, we are dedicated to crafting professional video editing and motion graphics that bring your ideas to life. With a keen eye for detail and a passion for storytelling, our team transforms raw footage into stunning, engaging content that captivates audiences.
+                    </p>
+                    <p className="my-3 text-gray-600">
+                        Whether you need sleek promotional videos, vibrant social media content, or creative edits for personal projects, G1 Visuals delivers customized solutions tailored to your goals. Our expertise lies in creating seamless edits, dynamic motion graphics, and impactful visuals that leave a lasting impression.
+                    </p>
                     <p className="mb-6 text-gray-600">
-                        At LambUp.Com, we deliver top-quality video editing and motion graphics services tailored to your unique needs. With a passion for creativity and attention to detail, our expert team transforms raw footage into polished, captivating content that tells your story. Whether for marketing, social media, or personal projects, we bring your vision to life with seamless edits, vibrant effects, and engaging motion graphics. Let us help you stand out with professional, eye-catching videos that leave a lasting impact.
+                        We don’t just edit videos; we create experiences. Let us help your brand stand out with professional, eye-catching visuals designed to inspire and connect.
                     </p>
                 </div>
             </div>

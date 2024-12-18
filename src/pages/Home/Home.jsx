@@ -5,6 +5,7 @@ import Portfolio from "../../components/Portfolio";
 import Service from "../../components/Service";
 import States from "../../components/States";
 import Testimonials from "../../components/Testimonials";
+import WorkingProcess from "../../components/WorkingProcess";
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
             <States />
             <Service />
             <Portfolio />
+            <WorkingProcess />
             <Testimonials />
             <Contact />
         </div>

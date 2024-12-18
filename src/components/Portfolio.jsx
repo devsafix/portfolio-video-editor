@@ -34,7 +34,7 @@ const Portfolio = () => {
                     We Provide{" "}
                     <span className="text-themeColor lg:text-[40px] text-[25px]">
                         <Typewriter
-                            words={['Video Editing', 'FB Marketing', 'Thumbnail Design', 'YT Marketing']}
+                            words={['Video Editing', 'Motion Graphics', 'Sitdown Video', 'Explainer Video', 'Collage Art Video']}
                             loop={5}
                             cursor
                             cursorStyle="|"
@@ -45,8 +45,7 @@ const Portfolio = () => {
                     </span>
                 </h2>
                 <p className="max-w-3xl mx-auto mb-10 px-2">
-                    At LambUp.com, we offer a range of cutting-edge digital services to help your
-                    business thrive online. Our expertise includes:
+                    At G1 Visuals, we provide a range of innovative services designed to elevate your brand and help your business excel in the digital world. Our expertise includes
                 </p>
             </div>
 
@@ -97,7 +96,9 @@ const Portfolio = () => {
 
             {/* Modal */}
             {isModalOpen && (
-                <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
+                <div
+                    data-aos="fade"
+                    className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
                     <div className="bg-white mx-2 rounded-lg lg:p-8 p-6 relative max-w-4xl w-full">
                         <button
                             onClick={closeModal}
