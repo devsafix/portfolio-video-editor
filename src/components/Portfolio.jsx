@@ -20,10 +20,10 @@ const Portfolio = () => {
     };
 
     const videoItems = [
-        { thumbnail: "https://i.ytimg.com/vi/dYYeD1y95Tc/maxresdefault.jpg", url: "https://youtu.be/pnVBE8Q9ZuI" },
-        { thumbnail: "https://i.ytimg.com/vi/ZmN2T5X-9Bg/maxresdefault.jpg", url: "https://www.youtube.com/embed/ZmN2T5X-9Bg" },
-        { thumbnail: "https://i.ytimg.com/vi/WA6-KmDi5Zs/maxresdefault.jpg", url: "https://www.youtube.com/embed/WA6-KmDi5Zs" },
-        { thumbnail: "https://i.ytimg.com/vi/vo3IDBIP36M/maxresdefault.jpg", url: "https://www.youtube.com/embed/vo3IDBIP36M" },
+        { thumbnail: "https://i.ytimg.com/vi/dYYeD1y95Tc/maxresdefault.jpg", url: "https://www.youtube.com/embed/pnVBE8Q9ZuI?si=3jXm3oYAEa47s3vR" },
+        { thumbnail: "https://i.ytimg.com/vi/ZmN2T5X-9Bg/maxresdefault.jpg", url: "https://www.youtube.com/embed/Z1bVvOmTvB0?si=IL10KruFeYZpwQgH" },
+        { thumbnail: "https://i.ytimg.com/vi/WA6-KmDi5Zs/maxresdefault.jpg", url: "https://www.youtube.com/embed/xznAAfO81Xo?si=A5OA8-lQdfKITEad" },
+        { thumbnail: "https://i.ytimg.com/vi/vo3IDBIP36M/maxresdefault.jpg", url: "https://www.youtube.com/embed/HxvFXqqebcY?si=jVaSgdvjynCH3Mr9" },
     ];
 
     return (
@@ -79,7 +79,7 @@ const Portfolio = () => {
                 </div>
                 <div className="overflow-hidden relative whitespace-nowrap">
                     <div className="flex">
-                        <Marquee direction="right" pauseOnHover={true}>
+                        <Marquee direction="left" pauseOnHover={true}>
                             {videoItems.map((video, index) => (
                                 <div key={index} className="relative w-[400px] h-60 mr-8 rounded-lg group overflow-hidden">
                                     {/* Background Image */}
