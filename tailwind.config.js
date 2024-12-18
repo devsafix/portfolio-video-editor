@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        themeColor: "#81ACF8",
+        themeColor: "#66ccff",
       },
     },
   },

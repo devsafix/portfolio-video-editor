@@ -20,7 +20,7 @@ const Portfolio = () => {
     };
 
     const videoItems = [
-        { thumbnail: "https://i.ytimg.com/vi/dYYeD1y95Tc/maxresdefault.jpg", url: "https://www.youtube.com/embed/dYYeD1y95Tc" },
+        { thumbnail: "https://i.ytimg.com/vi/dYYeD1y95Tc/maxresdefault.jpg", url: "https://youtu.be/pnVBE8Q9ZuI" },
         { thumbnail: "https://i.ytimg.com/vi/ZmN2T5X-9Bg/maxresdefault.jpg", url: "https://www.youtube.com/embed/ZmN2T5X-9Bg" },
         { thumbnail: "https://i.ytimg.com/vi/WA6-KmDi5Zs/maxresdefault.jpg", url: "https://www.youtube.com/embed/WA6-KmDi5Zs" },
         { thumbnail: "https://i.ytimg.com/vi/vo3IDBIP36M/maxresdefault.jpg", url: "https://www.youtube.com/embed/vo3IDBIP36M" },
@@ -50,6 +50,7 @@ const Portfolio = () => {
             </div>
 
             <div className="flex flex-col gap-10">
+
                 <div className="overflow-hidden relative whitespace-nowrap">
                     <div className="flex">
                         <Marquee direction="right" pauseOnHover={true}>
@@ -76,19 +77,29 @@ const Portfolio = () => {
                         </Marquee>
                     </div>
                 </div>
-
-                {/* thumbnail */}
                 <div className="overflow-hidden relative whitespace-nowrap">
                     <div className="flex">
-                        <Marquee
-                            pauseOnHover={true}
-                        >
-                            <img src="https://lambup.com/wp-content/uploads/2024/10/lambup-3.jpg" alt="Portfolio Item 1" className="w-[400px] h-60 mr-8 rounded-lg object-cover" />
-                            <img src="https://lambup.com/wp-content/uploads/2024/10/lambup-4.jpg" alt="Portfolio Item 2" className="w-[400px] h-60 mr-8 rounded-lg object-cover" />
-                            <img src="https://lambup.com/wp-content/uploads/2024/10/12.png" alt="Portfolio Item 3" className="w-[400px] h-60 mr-8 rounded-lg object-cover" />
-                            <img src="https://lambup.com/wp-content/uploads/2024/10/lambup-5.jpg" alt="Portfolio Item 4" className="w-[400px] h-60 mr-8 rounded-lg object-cover" />
-                            <img src="https://lambup.com/wp-content/uploads/2024/10/lambup-1.jpg" alt="Portfolio Item 2" className="w-[400px] h-60 mr-8 rounded-lg object-cover" />
-                            <img src="https://lambup.com/wp-content/uploads/2024/10/lambup-2.jpg" alt="Portfolio Item 3" className="w-[400px] h-60 mr-8 rounded-lg object-cover" />
+                        <Marquee direction="right" pauseOnHover={true}>
+                            {videoItems.map((video, index) => (
+                                <div key={index} className="relative w-[400px] h-60 mr-8 rounded-lg group overflow-hidden">
+                                    {/* Background Image */}
+                                    <img
+                                        src={video.thumbnail}
+                                        alt={`Video ${index + 1}`}
+                                        className="w-full h-full rounded-lg object-cover group-hover:scale-105 transition-all duration-500"
+                                    />
+
+                                    {/* Play Icon */}
+                                    <div
+                                        onClick={() => openModal(video.url)}
+                                        className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-20 rounded-lg cursor-pointer"
+                                    >
+                                        <div className="w-12 h-12 bg-themeColor hover:text-white text-black rounded-full flex items-center justify-center shadow-lg transition-all duration-500">
+                                            <TiMediaPlay className="text-xl" />
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
                         </Marquee>
                     </div>
                 </div>
