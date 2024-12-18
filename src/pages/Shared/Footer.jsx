@@ -2,7 +2,7 @@ import { FaFacebookF, FaInstagram, FaLinkedin, FaPhoneSquareAlt, FaTwitter, FaWh
 import { IoLocationSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
-import logo  from "../../assets/G1 Visuals logo.png"
+import logo from "../../assets/G1 Visuals logo.png"
 
 const Footer = () => {
     return (
@@ -47,8 +47,9 @@ const Footer = () => {
                     <ul className="space-y-3 text-gray-400">
                         <li className="hover:text-themeColor transition-all duration-300 cursor-pointer">Video Editing</li>
                         <li className="hover:text-themeColor transition-all duration-300 cursor-pointer">Motion Graphic</li>
-                        <li className="hover:text-themeColor transition-all duration-300 cursor-pointer">Thumbnail Design</li>
-                        <li className="hover:text-themeColor transition-all duration-300 cursor-pointer">YouTube Marketing</li>
+                        <li className="hover:text-themeColor transition-all duration-300 cursor-pointer">Sitdown Video</li>
+                        <li className="hover:text-themeColor transition-all duration-300 cursor-pointer">Explainer Video</li>
+                        <li className="hover:text-themeColor transition-all duration-300 cursor-pointer">Collage Art Video</li>
                     </ul>
                 </div>
 

@@ -135,7 +135,7 @@ const Navbar = () => {
                             data-aos="fade-left"
                             data-aos-delay="50"
                             data-aos-duration="700"
-                            className="z-10 gap-2 bg-gradient-to-b from-teal-600 to-teal-400 absolute right-0 top-14 flex w-[200px] flex-col rounded-lg text-base"
+                            className="z-10 gap-2 bg-themeColor absolute right-0 top-14 flex w-[200px] flex-col rounded-lg text-base"
                         >
                             <li className="cursor-pointer px-6 py-2 text-white rounded-t-lg hover:bg-sky-600">
                                 <Link
